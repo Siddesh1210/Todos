@@ -11,7 +11,7 @@ function App() {
 
   async function getTodos() {
     try {
-      const response = await fetch("http://localhost:8000/todos/alltodos", {
+      const response = await fetch("https://curious-cap-bull.cyclic.app/todos/alltodos", {
         method: "GET",
       });
       if (!response.ok) {
@@ -30,7 +30,7 @@ function App() {
 
   async function submitTodo() {
     try {
-      const response = await fetch("http://localhost:8000/todos/createtodo", {
+      const response = await fetch("https://curious-cap-bull.cyclic.app/todos/createtodo", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -53,7 +53,7 @@ function App() {
   async function updateTodo(todoId) {
     try {
       const response = await fetch(
-        `http://localhost:8000/todos/updatetodo/${todoId}`,
+        `https://curious-cap-bull.cyclic.app/todos/updatetodo/${todoId}`,
         {
           method: "POST",
           headers: {
@@ -78,7 +78,7 @@ function App() {
 
   async function deleteTodo(id)
   {
-    const response = await fetch(`http://localhost:8000/todos/deletetodo/${id}`,{
+    const response = await fetch(`https://curious-cap-bull.cyclic.app/todos/deletetodo/${id}`,{
         method:"DELETE"
     })
     const result = await response.json();
@@ -88,7 +88,7 @@ function App() {
   async function handleUpdate(id)
   {
     console.log(id);
-    const response = await fetch(`http://localhost:8000/todos/updateTodoStatus/${id}`,{
+    const response = await fetch(`https://curious-cap-bull.cyclic.app/todos/updateTodoStatus/${id}`,{
         method:"POST",
         "headers":{
             "Content-Type":"application/json"
