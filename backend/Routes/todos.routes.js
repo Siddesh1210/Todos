@@ -2,6 +2,11 @@ import Todo from '../Model/Todos.model.js'
 import express, { Router } from 'express';
 const routes=express.Router();
 
+
+routes.get("/",(req,res)=>{
+    res.send("Todos is working")
+})
+
 routes.get("/alltodos",async (req,res)=>{
     const todos = await Todo.find();
     console.log(todos);
