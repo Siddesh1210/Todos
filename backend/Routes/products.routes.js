@@ -209,4 +209,456 @@ router.get("/just-trending", (req, res) => {
   return res.status(200).json({ laptops: data });
 });
 
+router.get("/allwatches", (req, res) => {
+  const data = [
+    {
+      productId: 1,
+      productName: "Invincible Plus",
+      mrp: 21999,
+      salePrice: 5999,
+      rating: 4.7,
+      description:
+        "INVINCIBLE PLUS - a true masterpiece of technology and design featuring an AMOLED Display, Bluetooth calling, 4 GB storage, and much more!",
+      category: "luxury",
+      features: [
+        {
+          img: "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/display-icom.png?v=1624514301",
+          title: "AMOLED Display",
+        },
+        {
+          img: "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/resolution-icon.png?v=1623731318",
+          title: "High Resolution",
+        },
+        {
+          img: "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/bluetooth-calling-icon_05e9a89a-4c16-4297-b72b-4f9f44197c5a.png?v=1633437148",
+          title: "Bluetooth Calling",
+        },
+        {
+          img: "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/storage-icon-2.png?v=1633523013",
+          title: "4GB Inbuilt Storage",
+        },
+        {
+          img: "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/sports-modes-icon.png?v=1623386154",
+          title: "300+ Sports Modes",
+        },
+        {
+          img: "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/metal-body.png?v=1629202789",
+          title: "Full Metal Body",
+        },
+      ],
+      images: [
+        "https://www.fireboltt.com/cdn/shop/products/Untitled-1Artboard-8_540x.png?v=1678186270",
+        "https://www.fireboltt.com/cdn/shop/products/invincible-plus-steel-website-sizeArtboard-10_540x.png?v=1678186270",
+        "https://www.fireboltt.com/cdn/shop/products/Untitled-1Artboard-11_540x.png?v=1678186270",
+        "https://www.fireboltt.com/cdn/shop/products/Untitled-1Artboard-12_540x.png?v=1678186270",
+      ],
+      coverImage:
+        "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/web1_copy.jpg?v=1694025837",
+    },
+    {
+      productId: 2,
+      productName: "Cyclone",
+      mrp: 12999,
+      salePrice: 1599,
+      rating: 4.3,
+      description:
+        "Fire-Boltt Cyclone, which comes in vibrant colors. It features a 40.6mm (1.6) HD round display, Bluetooth calling, motion sensor gaming.",
+      category: "smartwatch",
+      features: [
+        {
+          img: "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/storage-icon-2.png?v=1633523013",
+          title: "1GB Inbuilt Storage",
+        },
+        {
+          img: "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/sports-modes-icon.png?v=1623386154",
+          title: "300+ Sports Modes",
+        },
+        {
+          img: "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/display-icom.png?v=1624514301",
+          title: "AMOLED Display",
+        },
+        {
+          img: "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/resolution-icon.png?v=1623731318",
+          title: "High Resolution",
+        },
+        {
+          img: "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/bluetooth-calling-icon_05e9a89a-4c16-4297-b72b-4f9f44197c5a.png?v=1633437148",
+          title: "Bluetooth Calling",
+        },
+      ],
+      images: [
+        "https://www.fireboltt.com/cdn/shop/files/cyclone-black_1_400x.png?v=1687418762",
+        "https://www.fireboltt.com/cdn/shop/files/cyclone-black_2_540x.png?v=1687418760",
+        "https://www.fireboltt.com/cdn/shop/files/cyclone-black_3_540x.png?v=1687418758",
+        "https://www.fireboltt.com/cdn/shop/files/cyclone-black_5_540x.png?v=1687418764",
+      ],
+      coverImage:
+        "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/Cyclone-desktop-2.jpg?v=1693984661",
+    },
+    {
+      productId: 3,
+      productName: "Gladiator",
+      mrp: 10999,
+      salePrice: 1399,
+      rating: 4.2,
+      description:
+        " Fire-Boltt Gladiator smartwatch that comes with a 49.7mm (1.96) HD large display, Bluetooth calling, 123 sports modes, voice assistant, and rotating crown metal body.",
+      category: "smartwatch",
+      features: [
+        {
+          img: "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/storage-icon-2.png?v=1633523013",
+          title: "1GB Inbuilt Storage",
+        },
+        {
+          img: "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/sports-modes-icon.png?v=1623386154",
+          title: "300+ Sports Modes",
+        },
+        {
+          img: "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/display-icom.png?v=1624514301",
+          title: "AMOLED Display",
+        },
+        {
+          img: "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/resolution-icon.png?v=1623731318",
+          title: "High Resolution",
+        },
+        {
+          img: "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/bluetooth-calling-icon_05e9a89a-4c16-4297-b72b-4f9f44197c5a.png?v=1633437148",
+          title: "Bluetooth Calling",
+        },
+      ],
+      images: [
+        "https://www.fireboltt.com/cdn/shop/products/gladiator-black_1_400x.png?v=1672284246",
+        "https://www.fireboltt.com/cdn/shop/products/gladiator-black_2_540x.png?v=1672284251",
+        "https://www.fireboltt.com/cdn/shop/products/gladiator-black_3_540x.png?v=1672284244",
+        "https://www.fireboltt.com/cdn/shop/products/gladiator-black_4_540x.png?v=1672284248",
+      ],
+      coverImage:
+        "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/gladiator-desktop-banner_f427703b-49d7-45d6-9585-517e729e1ac0.jpg?v=1675343770",
+    },
+    {
+      productId: 4,
+      productName: "Ninja Call 2",
+      mrp: 1399,
+      salePrice: 7999,
+      rating: 4.5,
+      description:
+        "A 43mm (1.7″ inch) Full-Touch Display for better view. You can also enjoy wireless calling with the feature of Bluetooth Calling along with a built-in mic and speaker.",
+      category: "ninja",
+      features: [
+        {
+          img: "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/storage-icon-2.png?v=1633523013",
+          title: "1GB Inbuilt Storage",
+        },
+        {
+          img: "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/sports-modes-icon.png?v=1623386154",
+          title: "300+ Sports Modes",
+        },
+        {
+          img: "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/display-icom.png?v=1624514301",
+          title: "AMOLED Display",
+        },
+        {
+          img: "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/resolution-icon.png?v=1623731318",
+          title: "High Resolution",
+        },
+        {
+          img: "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/bluetooth-calling-icon_05e9a89a-4c16-4297-b72b-4f9f44197c5a.png?v=1633437148",
+          title: "Bluetooth Calling",
+        },
+      ],
+      images: [
+        "https://www.fireboltt.com/cdn/shop/products/1_8ba02f4a-9e30-4d06-9b37-fe825036ffaa_400x.png?v=1645170761",
+        "https://www.fireboltt.com/cdn/shop/products/ninjacall2_black_03_540x.png?v=1668412850",
+        "https://www.fireboltt.com/cdn/shop/products/3_78ed4b5f-6e01-4f90-ab29-3ac0676f04d8_540x.png?v=1668412850",
+        "https://www.fireboltt.com/cdn/shop/products/4_99cfb9c1-4f36-4a34-aebb-de1f99226cff_540x.png?v=1668412850",
+      ],
+      coverImage:
+        "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/12-Top_banner_8e063657-2bfb-437e-aa5b-37c6f2f537c2.jpg?v=1685438875",
+    },
+    {
+      productId: 5,
+      productName: "Dagger",
+      mrp: 18999,
+      salePrice: 3799,
+      rating: 4.8,
+      description:
+        " Fire-Boltt Dagger is a 1.43 AMOLED Display smartwatch with Bluetooth calling, a full metal body, 466*466 pixels high resolution,.",
+      category: "smartwatch",
+      features: [
+        {
+          img: "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/storage-icon-2.png?v=1633523013",
+          title: "1GB Inbuilt Storage",
+        },
+        {
+          img: "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/sports-modes-icon.png?v=1623386154",
+          title: "300+ Sports Modes",
+        },
+        {
+          img: "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/display-icom.png?v=1624514301",
+          title: "AMOLED Display",
+        },
+        {
+          img: "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/resolution-icon.png?v=1623731318",
+          title: "High Resolution",
+        },
+        {
+          img: "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/bluetooth-calling-icon_05e9a89a-4c16-4297-b72b-4f9f44197c5a.png?v=1633437148",
+          title: "Bluetooth Calling",
+        },
+      ],
+      images: [
+        "https://www.fireboltt.com/cdn/shop/products/dagger-grey_1_540x.png?v=1675249296",
+        "https://www.fireboltt.com/cdn/shop/products/dagger-grey_2_540x.png?v=1675249298",
+        "https://www.fireboltt.com/cdn/shop/products/dagger-grey_3_540x.png?v=1675249295",
+        "https://www.fireboltt.com/cdn/shop/products/dagger-grey_4_540x.png?v=1675249296",
+      ],
+      coverImage:
+        "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/dagger-01_6194770f-fe32-49e2-9f83-44c26d878d97.gif?v=1675424527",
+    },
+    {
+      productId: 6,
+      productName: "Sphere",
+      mrp: 19999,
+      salePrice: 1999,
+      rating: 4.4,
+      description:
+        " Fire-Boltt Introducing the ultimate smartwatch for the adventurer in you! Our rugged smartwatch is designed to withstand even the toughest environments",
+      category: "sport",
+      features: [
+        {
+          img: "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/storage-icon-2.png?v=1633523013",
+          title: "1GB Inbuilt Storage",
+        },
+        {
+          img: "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/sports-modes-icon.png?v=1623386154",
+          title: "300+ Sports Modes",
+        },
+        {
+          img: "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/display-icom.png?v=1624514301",
+          title: "AMOLED Display",
+        },
+        {
+          img: "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/resolution-icon.png?v=1623731318",
+          title: "High Resolution",
+        },
+        {
+          img: "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/bluetooth-calling-icon_05e9a89a-4c16-4297-b72b-4f9f44197c5a.png?v=1633437148",
+          title: "Bluetooth Calling",
+        },
+      ],
+      images: [
+        "https://www.fireboltt.com/cdn/shop/products/Black_01_400x.png?v=1677243430",
+        "https://www.fireboltt.com/cdn/shop/products/Black_02_540x.png?v=1677243427",
+        "https://www.fireboltt.com/cdn/shop/products/Black_03_540x.png?v=1677243428",
+        "https://www.fireboltt.com/cdn/shop/products/Black_04_540x.png?v=1677243431",
+      ],
+      coverImage:
+        "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/Sphere-desktop_2.jpg?v=1686136302",
+    },
+    {
+      productId: 7,
+      productName: "Ninja Pro Max",
+      mrp: 5999,
+      salePrice: 1499,
+      rating: 4.2,
+      description:
+        "Ninja Pro Max Smartwatch features a large display of 40mm (1.6″ inch), 27 sports mode, SpO2 monitor, heart rate monitoring, and much more.",
+      category: "ninja",
+      features: [
+        {
+          img: "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/storage-icon-2.png?v=1633523013",
+          title: "1GB Inbuilt Storage",
+        },
+        {
+          img: "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/sports-modes-icon.png?v=1623386154",
+          title: "300+ Sports Modes",
+        },
+        {
+          img: "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/display-icom.png?v=1624514301",
+          title: "AMOLED Display",
+        },
+        {
+          img: "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/resolution-icon.png?v=1623731318",
+          title: "High Resolution",
+        },
+        {
+          img: "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/bluetooth-calling-icon_05e9a89a-4c16-4297-b72b-4f9f44197c5a.png?v=1633437148",
+          title: "Bluetooth Calling",
+        },
+      ],
+      images: [
+        "https://www.fireboltt.com/cdn/shop/products/25_8db87cd3-4e53-4ead-a784-a198596019d6_540x.png?v=1668413408",
+        "https://www.fireboltt.com/cdn/shop/products/26_540x.png?v=1668413408",
+        "https://www.fireboltt.com/cdn/shop/products/NinjaProMAx_pink_03_540x.png?v=1668413408",
+        "https://www.fireboltt.com/cdn/shop/products/28_540x.png?v=1668413408",
+      ],
+      coverImage:
+        "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/Ninja_Pro_Max-web.jpg?v=1689855744",
+    },
+    {
+      productId: 8,
+      productName: "Blizzard Ultra",
+      mrp: 20999,
+      salePrice: 7999,
+      rating: 4.9,
+      description:
+        "Blizzard Ultra features a 32.5mm (1.28) HD round display, bluetooth calling, stainless steel design, 120 sports modes, voice assistant, inbuilt games and more.",
+      category: "luxury",
+      features: [
+        {
+          img: "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/storage-icon-2.png?v=1633523013",
+          title: "4GB Inbuilt Storage",
+        },
+        {
+          img: "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/sports-modes-icon.png?v=1623386154",
+          title: "300+ Sports Modes",
+        },
+        {
+          img: "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/display-icom.png?v=1624514301",
+          title: "AMOLED Display",
+        },
+        {
+          img: "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/resolution-icon.png?v=1623731318",
+          title: "High Resolution",
+        },
+        {
+          img: "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/bluetooth-calling-icon_05e9a89a-4c16-4297-b72b-4f9f44197c5a.png?v=1633437148",
+          title: "Bluetooth Calling",
+        },
+        {
+          img: "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/metal-body.png?v=1629202789",
+          title: "Full Metal Body",
+        },
+      ],
+      images: [
+        "https://www.fireboltt.com/cdn/shop/files/blizzard-ultra-silver_1_540x.png?v=1689334234",
+        "https://www.fireboltt.com/cdn/shop/files/blizzard-ultra-silver_2_540x.png?v=1689334232",
+        "https://www.fireboltt.com/cdn/shop/files/blizzard-ultra-silver_4_540x.png?v=1689334235",
+      ],
+      coverImage:
+        "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/blizzard-ultra-desktop-2.jpg?v=1693939902",
+    },
+    {
+      productId: 9,
+      productName: "Asteroid",
+      mrp: 15999,
+      salePrice: 1999,
+      rating: 4.7,
+      description:
+        "Asteroid Smartwatch - a fusion of style and tech, featuring a stunning 36.3mm (1.43) AMOLED display, Bluetooth calling and low power consumption.",
+      category: "smartwatch",
+      features: [
+        {
+          img: "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/storage-icon-2.png?v=1633523013",
+          title: "1GB Inbuilt Storage",
+        },
+        {
+          img: "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/sports-modes-icon.png?v=1623386154",
+          title: "300+ Sports Modes",
+        },
+        {
+          img: "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/display-icom.png?v=1624514301",
+          title: "AMOLED Display",
+        },
+        {
+          img: "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/resolution-icon.png?v=1623731318",
+          title: "High Resolution",
+        },
+        {
+          img: "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/bluetooth-calling-icon_05e9a89a-4c16-4297-b72b-4f9f44197c5a.png?v=1633437148",
+          title: "Bluetooth Calling",
+        },
+      ],
+      images: [
+        "https://www.fireboltt.com/cdn/shop/files/asteroid-orange_1_540x.png?v=1692944180",
+        "https://www.fireboltt.com/cdn/shop/files/asteroid-orange_3_540x.png?v=1692944177",
+        "https://www.fireboltt.com/cdn/shop/files/asteroid-orange_4_540x.png?v=1692944177",
+        "https://www.fireboltt.com/cdn/shop/files/asteroid-orange_5_540x.png?v=1692944178",
+      ],
+      coverImage:
+        "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/asteroid-desktop_2.jpg?v=1692590811",
+    },
+    {
+      productId: 10,
+      productName: "Ninja Fit Pro",
+      mrp: 1699,
+      salePrice: 10999,
+      rating: 4.6,
+      description:
+        "Fire-Boltt introduces Ninja Fit Pro with a 50.8mm (2.0) large display, BT calling, 600 nits peak brightness, 250mAh battery, Voice assistant, 100+ watch faces and much more. ",
+      category: "ninja",
+      features: [
+        {
+          img: "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/storage-icon-2.png?v=1633523013",
+          title: "1GB Inbuilt Storage",
+        },
+        {
+          img: "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/sports-modes-icon.png?v=1623386154",
+          title: "300+ Sports Modes",
+        },
+        {
+          img: "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/display-icom.png?v=1624514301",
+          title: "AMOLED Display",
+        },
+        {
+          img: "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/resolution-icon.png?v=1623731318",
+          title: "High Resolution",
+        },
+        {
+          img: "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/bluetooth-calling-icon_05e9a89a-4c16-4297-b72b-4f9f44197c5a.png?v=1633437148",
+          title: "Bluetooth Calling",
+        },
+      ],
+      images: [
+        "https://www.fireboltt.com/cdn/shop/files/ninja-fit-pro-red_1_540x.png?v=1689325055",
+        "https://www.fireboltt.com/cdn/shop/files/ninja-fit-pro-red_3_540x.png?v=1689325055",
+        "https://www.fireboltt.com/cdn/shop/files/ninja-fit-pro-red_2_540x.png?v=1689325055",
+      ],
+      coverImage:
+        "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/ninja-fit-pro-desktop_3_2d7791ab-01ee-4c2d-bd2f-76d121874122.jpg?v=1693974895",
+    },
+    {
+      productId: 11,
+      productName: "Expedition",
+      mrp: 21999,
+      salePrice: 1899,
+      rating: 4.5,
+      description:
+        " Fire-boltt Expedition Smartwatch. 35.3mm(1.39) round display, inbuilt GPS, BT calling.",
+      category: "sport",
+      features: [
+        {
+          img: "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/storage-icon-2.png?v=1633523013",
+          title: "1GB Inbuilt Storage",
+        },
+        {
+          img: "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/sports-modes-icon.png?v=1623386154",
+          title: "300+ Sports Modes",
+        },
+        {
+          img: "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/display-icom.png?v=1624514301",
+          title: "AMOLED Display",
+        },
+        {
+          img: "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/resolution-icon.png?v=1623731318",
+          title: "High Resolution",
+        },
+        {
+          img: "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/bluetooth-calling-icon_05e9a89a-4c16-4297-b72b-4f9f44197c5a.png?v=1633437148",
+          title: "Bluetooth Calling",
+        },
+      ],
+      images: [
+        "https://www.fireboltt.com/cdn/shop/files/expedition-black_1_540x.png?v=1698733392",
+        "https://www.fireboltt.com/cdn/shop/files/expedition-black_2_540x.png?v=1698733392",
+        "https://www.fireboltt.com/cdn/shop/files/expedition-black_3_540x.png?v=1698733392",
+        "https://www.fireboltt.com/cdn/shop/files/expedition-black_4_540x.png?v=1698733392",
+      ],
+      coverImage:
+        "https://cdn.shopify.com/s/files/1/0137/0292/2286/files/expedition-desktop_1.jpg?v=1697105475",
+    },
+  ];
+  return res.status(200).json({ allwatches: data });
+});
+
 export default router;
